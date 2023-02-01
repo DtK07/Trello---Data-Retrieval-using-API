@@ -1,5 +1,5 @@
 Info:
-This is a python script integrates with Trello API to pull out the exact status of the trello boards, lists and tickets.
+This is a python script integrates with Trello API to pull out the exact status of the trello boards, lists and cards.
 
 Libraries used:
 1. Requests
