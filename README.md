@@ -1,14 +1,11 @@
-Info:
-This is a python script integrates with Trello API to pull out the exact status of the trello boards, lists and cards.
+# Trello--API
 
-Libraries used:
-1. Requests
-2. JSON
-3. Pandas
+The script integrates with the Trello API to retrieve the current status of Trello boards, lists, and cards. The libraries used in the script are Requests, JSON, and Pandas.
 
-Process:
-1. Find the API url from trello and add the required aspects that needs to be pulled out. For eg., if board details is needed use API specified for Board else if list details is needed use API specified for list and so on..
-2. Once the url is finalized, use requests module to send requests to the destined url and get the response. Response needs to be '200' if there is no error.
-3. When the received response is 200, use json module to unpack the json object from the return response.
-4. Once json object is returned, use data structures to unpack and load the data from json objects based on the requirements.
-5. Finally using pandas convert the created data structure to a data frame and load the dataframe in an excel or csv depending on the feasibility.
+The process of the script is as follows:
+
+The API URL is retrieved from Trello and the required data is specified. For example, if the details of a board are needed, the API for boards is used, and similarly for lists and cards.
+The finalized URL is then sent using the Requests module to retrieve the response. If the response is successful, it should be a "200" status.
+If the response is 200, the JSON object is unpacked using the JSON module.
+The data is then structured and loaded from the JSON object based on the requirements.
+Finally, the structured data is converted to a Pandas dataframe and saved in either an Excel sheet or a CSV file, depending on the feasibility.
